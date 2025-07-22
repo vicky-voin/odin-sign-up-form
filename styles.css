@@ -1,0 +1,73 @@
+:root
+{
+    --logo-height: 150px;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content
+{
+    display: flex;
+    flex-grow: 1;
+}
+
+.content-logo
+{
+    background-image: url("bg-leaves.avif");
+    background-position: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    min-width: 40vw;
+}
+
+.logo-container{
+    display: flex;
+    flex-grow: 0;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    height: var(--logo-height);
+    background-color: rgba(0,0,0,0.3);
+}
+
+.logo-container > img{
+    height: var(--logo-height);
+}
+
+.logo-container > span
+{
+    color: white;
+}
+
+.bg-credit
+{
+    color: white;
+}
+
+.form-content
+{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.form-field
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
