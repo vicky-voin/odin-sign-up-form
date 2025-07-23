@@ -143,8 +143,24 @@ body{
 .form-field > input
 {
     border: 1px solid #e5e7eb;
-    border-radius:2px;
+    border-radius: 4px;
     font-size: 1em;
+    padding: 6px 12px;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.form-field > input:focus
+{
+    border: 1px solid blue;
+    box-shadow: 3px 6px 16px -6px rgba(0,0,0,0.41);
+    outline: none;
+}
+
+.form-field > input:invalid
+{
+    border: 1px solid red;
+    outline: none;
 }
 
 .form-button
